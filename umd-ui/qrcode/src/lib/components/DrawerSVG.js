@@ -1,4 +1,4 @@
-﻿import { assign } from "@misa-umd/core";
+﻿import { assign } from "@aq-umd/core";
 
 class SVGDrawer {
     default = {

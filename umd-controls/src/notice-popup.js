@@ -1,6 +1,6 @@
 import './notice-popup.css';
 import _TEMPLATE_ from './notice-popup.html?raw';
-import {DOMUtil, DOMClass} from '@misa-umd/core';
+import {DOMUtil, DOMClass} from '@aq-umd/core';
 
 class NoticePopup extends DOMClass {
 

@@ -2,7 +2,7 @@ import _common from './customscroll';
 import './combobox.css';
 import _TEMPLATE_ from './combobox.html?raw';
 
-import { isFn,isValue, formatData, DOMUtil, DOMClass, isCharacterKeyPress, smoothScrollToTarget } from '@misa-umd/core';
+import { isFn,isValue, formatData, DOMUtil, DOMClass, isCharacterKeyPress, smoothScrollToTarget } from '@aq-umd/core';
 
 class Combobox extends DOMClass {
 

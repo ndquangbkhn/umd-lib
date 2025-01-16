@@ -1,5 +1,5 @@
 
-import { create as makeStore, EventBus }  from '@misa-umd/core'; // Add this line
+import { create as makeStore, EventBus }  from '@aq-umd/core'; // Add this line
 import __css from "@setting/css";
 import libConfig from "@config";
 import resource from "@resource";

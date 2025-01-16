@@ -8,7 +8,7 @@ import createRegex from "./components/Regex";
 import createBox from "./components/Box";
 import {toEmoji } from "./components/Emoticons";
 
-import { CustomScrollCSS } from "@misa-umd/controls";
+import { CustomScrollCSS } from "@aq-umd/controls";
 CustomScrollCSS.init();
 
 const NativeMap = _store.get("NativeMap") || {};

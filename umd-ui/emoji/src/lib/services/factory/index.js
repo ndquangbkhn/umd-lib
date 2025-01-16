@@ -1,4 +1,4 @@
-import { postAsync, getAsync } from '@misa-umd/core';
+import { postAsync, getAsync } from '@aq-umd/core';
 export default {
     postAsync,
     getAsync

@@ -20,18 +20,18 @@ export default {
       var size = 450;
         var card = {
             Address: "<a>Hà Nội</a>",
-            CompanyAddress: "Tầng 9, Tòa nhà Technosoft, số 8 ngõ 15 Duy Tân, Cầu Giấy, Hà Nội",
+            CompanyAddress: "Hà Nội",
             FullName: "Nguyen Đức Quảng",
             LastName: "Đức Quảng",
             FirstName: "Nguyễn",
-            JobTitle: "Fresher",
+            JobTitle: "Coder",
             Mobile: "0389926059",
-            OfficeTel: "0243 122 222",
-            Organization: "MISA JSC",
-            Website: "misa.vn",
-            OfficeEmail: "ndquang@software.misa.com.vn",
+            OfficeTel: "0222 222 222",
+            Organization: "Company",
+            Website: "aq.vn",
+            OfficeEmail: "aq@gmail.com",
             Email: "ndquang@gmail.com",
-            Avatar: "https://api.amis.vn/Handler/ImageHandler.ashx?UserID=9dbbfcc8-05e9-4e44-b47b-b7764f244c3f&CompanyCode=misajsc&H=192&W=192"
+            Avatar: "https://example.com/avatar/1"
         };
 
  
@@ -61,20 +61,20 @@ export default {
         renderQR(size, QRCreator.ImageType.SVG, 3);
         renderQR(size, QRCreator.ImageType.SVG, 2);
 
-        var el = QRCreator.create("misa", {
+        var el = QRCreator.create("ndquang", {
             colorDark: "#0238F0",
             celSize: 0,
             boxSize: 270,
             colorPrimary: "#2196f3",
             style: "dot"
         });
-        body.append("QR client for text=misa box-size=" + size + "px");
+        body.append("QR client for text=ndquang box-size=" + size + "px");
         body.append(el);
 
 
         function showBox(card, lang) {
             QRCreator.showVCardBox(card, {
-                shareLink: "https://cdnapps.amispdc.misa.local/apps/qrviewer/index.html?sz=400&st=dot&ct={0}",
+                shareLink: "https://example.com/qrviewer/index.html?sz=400&st=dot&ct={0}",
                 afterCopyClipboard: function (text) {
                     //show toast thông báo copy success ở đây
                     console.log(text);

@@ -6,7 +6,7 @@ import {
     format,
     DOMUtil,
     DOMClass
-} from "@misa-umd/core";
+} from "@aq-umd/core";
 
 import { getResource } from "@core";
 import ImageType from "@data/image-type";

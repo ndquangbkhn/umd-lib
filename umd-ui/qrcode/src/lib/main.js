@@ -7,7 +7,7 @@
 * 
 */
 
-import { downloadSVG, downloadPNG } from "@misa-umd/core";
+import { downloadSVG, downloadPNG } from "@aq-umd/core";
 import ErrorCorrectLevel from "@data/error-correct-level";
 import ImageType from "@data/image-type";
 import QRFactory from "./components/Factory";

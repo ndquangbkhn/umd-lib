@@ -1,5 +1,5 @@
 ﻿
-import {assign as _extends} from "@misa-umd/core";
+import {assign as _extends} from "@aq-umd/core";
 import dom from "@lib/components/DOM";
 import element from "@lib/components/Element";
 import createPicker from "@lib/components/Picker";
