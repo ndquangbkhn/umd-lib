@@ -1,0 +1,11 @@
+{
+    "explorer.fileNesting.patterns": {
+        "*.js": "${capture}.js,${capture}.css,${capture}.html,${capture}.json",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml"
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": true
+}
