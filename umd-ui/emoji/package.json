@@ -13,8 +13,8 @@
     "test": "node prebuildscript.js prod && vite build && node build/app.js"
   },
   "dependencies": {
-    "@misa-umd/core": "*",
-    "@misa-umd/controls": "*",
+    "@aq-umd/core": "*",
+    "@aq-umd/controls": "*",
     "express": "^4.21.2",
     "vite-plugin-copy": "^0.1.6",
     "vite-plugin-css": "^1.0.4",
