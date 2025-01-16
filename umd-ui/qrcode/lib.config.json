@@ -1,6 +1,6 @@
 {
-  "name": "misa.qrcreator",
+  "name": "aq.qrcode",
   "version": "2.0.0",
-  "cssprefix": "misa-qrcode",
-  "global": "MISAQRCreator"
+  "cssprefix": "aq-qrcode",
+  "global": "AQQrcode"
 }

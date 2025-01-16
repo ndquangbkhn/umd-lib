@@ -1,6 +1,6 @@
 import './switch-button.css';
 import _TEMPLATE_ from './switch-button.html?raw';
-import { DOMClass } from '@misa-umd/core';
+import { DOMClass } from '@aq-umd/core';
 
 class SwitchButton extends DOMClass {
 

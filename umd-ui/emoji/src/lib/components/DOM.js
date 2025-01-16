@@ -1,5 +1,5 @@
 ﻿
-import { shallowEqual, hyphenateStyleName } from "@misa-umd/core"
+import { shallowEqual, hyphenateStyleName } from "@aq-umd/core"
 import _assign from "@lib/common/objectassign";
 import { focusNode, containsNode, getActiveElement } from "@lib/common/node";
 import { emptyFunction, emptyObject } from "@lib/common/emptyfn";

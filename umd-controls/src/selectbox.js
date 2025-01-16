@@ -1,6 +1,6 @@
 import './selectbox.css';
 import _TEMPLATE_ from './selectbox.html?raw';
-import { DOMUtil, DOMClass, isValue } from '@misa-umd/core';
+import { DOMUtil, DOMClass, isValue } from '@aq-umd/core';
 
 class SelectBox extends DOMClass {
 

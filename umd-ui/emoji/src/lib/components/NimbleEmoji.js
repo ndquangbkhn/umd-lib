@@ -3,7 +3,7 @@
 } from "@lib/common/object";
 
 import _element from "@lib/components/Element";
-import { assign as _extendsFn } from "@misa-umd/core"
+import { assign as _extendsFn } from "@aq-umd/core"
 import { uncompress } from "@lib/components/Data";
 import { getEmojiDefaultProps } from "@lib/components/EmojiDefaultProps";
 import { getData, getSanitizedData, unifiedToNative } from "@lib/components/EmojiUtils";

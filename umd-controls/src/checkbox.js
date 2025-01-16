@@ -1,6 +1,6 @@
 import './checkbox.css';
 import _TEMPLATE_ from './checkbox.html?raw';
-import { isFn, DOMUtil, DOMClass } from '@misa-umd/core';
+import { isFn, DOMUtil, DOMClass } from '@aq-umd/core';
 
 
 class CheckBox extends DOMClass {

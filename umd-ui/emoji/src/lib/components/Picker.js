@@ -4,7 +4,7 @@ import _inherits2 from "@lib/common/inherits";
 import _element from "@lib/components/Element";
 import { getPickerDefaultProps } from "@lib/components/EmojiDefaultProps";
 import createNimblePicker from "@lib/components/NimblePicker";
-import { assign as _extendsFn } from "@misa-umd/core";
+import { assign as _extendsFn } from "@aq-umd/core";
 
 import _all from "@data/data";
 

@@ -1,5 +1,5 @@
 ﻿
-import { isValue, assign } from "@misa-umd/core";
+import { isValue, assign } from "@aq-umd/core";
 import ImageType from "@data/image-type";
 import ErrorCorrectLevel from "@data/error-correct-level";
 import QRModel from "./Model";
@@ -46,7 +46,7 @@ class QRFactory {
     getBox(size) {
         if (!isValue(size)) size = 200;
         var el = document.createElement("div");
-        el.classList.add("misa-qr-code-box");
+        el.classList.add("cssprefx-qr-code-box");
         el.style["box-sizing"] = "border-box";
         if (size) {
             el.style.width = size + "px";
