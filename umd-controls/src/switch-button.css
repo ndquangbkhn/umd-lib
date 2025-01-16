@@ -1,0 +1,28 @@
+﻿.cssprefix-switch {
+    height: 16px;
+    width: 32px;
+    border: 1px solid var(--cssprefix-border-color);
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    background: #ccc;
+    margin-top: 6px;
+}
+.cssprefix-switch[mode='on'] {
+    background: var(--cssprefix-primary-color);
+    border: 1px solid  var(--cssprefix-primary-color);
+}
+.cssprefix-switch-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.cssprefix-switch[mode='on'] .cssprefix-switch-button {
+    left: unset;
+    right: 2px;
+}

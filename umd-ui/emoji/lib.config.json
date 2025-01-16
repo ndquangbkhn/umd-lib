@@ -1,0 +1,6 @@
+{
+  "name": "aq.emoji",
+  "version": "2.0.0",
+  "cssprefix": "aq-qrcode",
+  "global": "AQEmoji"
+}

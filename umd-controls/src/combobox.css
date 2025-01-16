@@ -1,0 +1,144 @@
+﻿/*************************
+combobox.css
+***************************/
+.cssprefix-combobox-body {
+    width: 100%;
+    min-width: 120px;
+    position: relative;
+    user-select: none;
+
+}
+
+.cssprefix-combobox-input {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #212121;
+    user-select: none;
+    background-position: calc(100% - 8px) center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    border-radius: 4px;
+    padding: 0 16px;
+    border: 1px solid var(--cssprefix-border-color);
+    border-radius: 4px;
+    height: 32px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjUuMjEiIHZpZXdCb3g9IjAgMCA5IDUuMjEiPjx0aXRsZT5hcnJvdy1vcGVuZWQ8L3RpdGxlPjxwYXRoIGQ9Ik00LDZsNCw0LDQtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMuNSAtNS41KSIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzcxOGNhMTtzdHJva2UtbGluZWNhcDpyb3VuZCIgLz48L3N2Zz4=);
+}
+
+.cssprefix-combobox-input:focus,
+.cssprefix-combobox-input:active {
+    outline: none;
+    border: 1px solid var(--cssprefix-primary-color);
+}
+
+
+.cssprefix-combobox-menu {
+    position: absolute;
+    top: calc(100% + 2px);
+    right: 0px;
+    left: auto;
+    z-index: 5000000;
+    display: none;
+    width: 100%;
+    float: left;
+    padding: 8px;
+    cursor: default;
+    margin: 2px 0 0;
+    font-size: 16px;
+    text-align: left;
+    list-style: none;
+    background-color: white;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    overflow: hidden;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    color: var(--cssprefix-text-color);
+    padding-right: 10px;
+}
+
+.cssprefix-combobox-empty {
+    text-align: center;
+    color: var(--cssprefix-hint-color);
+    font-size: 14px;
+}
+
+.cssprefix-combobox-menu:hover {
+    overflow-y: auto;
+}
+
+.cssprefix-combobox-menu .cssprefix-combobox-item:active {
+    color: var(--cssprefix-text-color);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+.cssprefix-combobox-menu .cssprefix-combobox-item,
+.cssprefix-combobox-menu .cssprefix-combobox-menu-clear {
+    min-height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: var(--cssprefix-text-color);
+    padding: 0 16px 0 16px;
+    width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.cssprefix-combobox-menu .cssprefix-combobox-item .cssprefix-combobox-item-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+.cssprefix-combobox-menu .cssprefix-combobox-item:last-child {
+    border-bottom: none;
+}
+
+.cssprefix-combobox-menu .cssprefix-combobox-item:hover,
+.cssprefix-combobox-menu .cssprefix-combobox-menu-clear:hover,
+.cssprefix-combobox-menu .cssprefix-combobox-item.selected {
+    background-color: var(--cssprefix-item-hover-color);
+    cursor: pointer;
+}
+
+.cssprefix-combobox-menu .cssprefix-combobox-item.cssprefix-combobox-item-title {
+    font-weight: 500;
+    line-height: 40px !important;
+    height: 40px !important;
+    background-color: var(--cssprefix-item-hover-color);
+}
+
+.cssprefix-combobox-menu .cssprefix-combobox-item.cssprefix-combobox-item-title:hover {
+    cursor: default;
+    user-select: none;
+}
+
+.cssprefix-combobox-menu .cssprefix-combobox-title {
+    height: 40PX;
+    line-height: 40PX;
+    padding-left: 16PX;
+    font-weight: 700;
+}

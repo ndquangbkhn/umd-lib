@@ -1,0 +1,37 @@
+{
+  "name": "umd-framework",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node prebuildscript.js dev",
+    "dev": "vite",
+    "prefake": "node prebuildscript.js fake",
+    "fake": "vite",
+    "prebuild": "node prebuildscript.js prod",
+    "build": "vite build",
+    "test": "node prebuildscript.js prod && vite build && node build/app.js"
+  },
+  "dependencies": {
+    "@misa-umd/core": "*",
+    "@misa-umd/controls": "*",
+    "express": "^4.21.2",
+    "vite-plugin-copy": "^0.1.6",
+    "vite-plugin-css": "^1.0.4",
+    "vite-plugin-static-copy": "^2.2.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@rollup/plugin-replace": "^6.0.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-delete": "^2.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-rename": "^1.0.1",
+    "rollup-plugin-url": "^3.0.1",
+    "vite": "^6.0.1",
+    "vite-html-plugin": "^0.1.4",
+    "vite-plugin-html": "^3.2.2",
+    "vite-plugin-string": "^1.2.3"
+  }
+}

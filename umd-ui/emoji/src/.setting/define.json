@@ -1,0 +1,25 @@
+{
+    "icons-public": [
+        {
+            "name": "facebook",
+            "file": "facebook.png",
+            "position": "center"
+        },
+        {
+            "name": "google",
+            "file": "google.png"
+        },
+        {
+            "name": "apple",
+            "file": "apple.png"
+        }
+    ],
+    "variables":{
+        "primary-color": "#2563eb",
+        "text-color": "#111827",
+        "hint-color": "#e5e5e5",
+        "border-color": "#9CA3AF",
+        "item-hover-color": "#f2f2f2",
+        "font-size": "14px"
+    }
+}

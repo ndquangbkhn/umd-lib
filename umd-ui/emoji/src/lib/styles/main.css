@@ -1,0 +1,465 @@
+.cssprefix-mart,
+.cssprefix-mart * {
+  box-sizing: border-box;
+  line-height: 1.15;
+  font-size: 14px;
+}
+
+.cssprefix-mart {
+  font-size: 14px;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.cssprefix-mart .cssprefix-mart-emoji {
+  padding: 6px;
+}
+
+.cssprefix-mart-bar {
+  border: 0 solid #d9d9d9;
+}
+
+.cssprefix-mart-bar:first-child {
+  border-bottom-width: 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cssprefix-mart-bar:last-child {
+  border-top-width: 1px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.cssprefix-mart-anchors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 6px;
+  line-height: 0;
+}
+
+.cssprefix-mart-anchor {
+  position: relative;
+  display: block;
+  flex: 1 1 auto;
+  color: #858585;
+  text-align: center;
+  padding: 12px 4px;
+  overflow: hidden;
+  transition: color .1s ease-out;
+  margin: 0;
+  box-shadow: none;
+  background: none;
+  border: none;
+}
+
+.cssprefix-mart-anchor:focus {
+  outline: 0
+}
+
+.cssprefix-mart-anchor:hover,
+.cssprefix-mart-anchor:focus,
+.cssprefix-mart-anchor-selected {
+  color: #464646;
+}
+
+.cssprefix-mart-anchor-selected .cssprefix-mart-anchor-bar {
+  bottom: 0;
+}
+
+.cssprefix-mart-anchor-bar {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #464646;
+}
+
+.cssprefix-mart-anchors i {
+  display: inline-block;
+  width: 100%;
+  max-width: 22px;
+}
+
+.cssprefix-mart-anchors svg,
+.cssprefix-mart-anchors img {
+  fill: currentColor;
+  height: 18px;
+  width: 18px;
+}
+
+.cssprefix-mart-scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 270px;
+  padding: 0 6px 6px 6px;
+  will-change: transform;
+  /* avoids "repaints on scroll" in mobile Chrome */
+}
+
+.cssprefix-mart-search {
+  margin-top: 6px;
+  padding: 0 6px;
+  position: relative;
+}
+
+.cssprefix-mart-search input {
+  display: block;
+  width: 100%;
+  padding: 5px 25px 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  outline: 0;
+}
+
+.cssprefix-mart-search input,
+.cssprefix-mart-search input::-webkit-search-decoration,
+.cssprefix-mart-search input::-webkit-search-cancel-button,
+.cssprefix-mart-search input::-webkit-search-results-button,
+.cssprefix-mart-search input::-webkit-search-results-decoration {
+  /* remove webkit/blink styles for <input type="search">
+* via https://stackoverflow.com/a/9422689 */
+  -webkit-appearance: none;
+}
+
+.cssprefix-mart-search-icon {
+  position: absolute;
+  top: 7px;
+  right: 11px;
+  z-index: 2;
+  padding: 2px 5px 1px;
+  border: none;
+  background: none;
+}
+
+.cssprefix-mart-category .cssprefix-mart-emoji:focus {
+  border: none;
+  outline: none;
+}
+
+.cssprefix-mart-category .cssprefix-mart-emoji span {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.cssprefix-mart-category .cssprefix-mart-emoji:hover:before {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border-radius: 100%;
+}
+
+.cssprefix-mart-category-label {
+  z-index: 2;
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.cssprefix-mart-category-label span {
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  padding: 5px 6px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, .95);
+}
+
+.cssprefix-mart-category-list {
+  margin: 0;
+  padding: 0;
+}
+
+.cssprefix-mart-category-list li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.cssprefix-mart-emoji {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+.cssprefix-mart-emoji-native {
+  font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
+}
+
+.cssprefix-mart-no-results {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 70px;
+  color: #858585;
+}
+
+.cssprefix-mart-no-results-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.cssprefix-mart-no-results .cssprefix-mart-category-label {
+  display: none;
+}
+
+.cssprefix-mart-no-results .cssprefix-mart-no-results-label {
+  margin-top: .2em;
+}
+
+.cssprefix-mart-no-results .cssprefix-mart-emoji:hover:before {
+  content: none;
+}
+
+
+.cssprefix-mart-title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cssprefix-mart-title .cssprefix-mart-emoji {
+  padding: 0;
+}
+
+.cssprefix-mart-title-label {
+  color: #999A9C;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.cssprefix-mart-skin-swatches {
+  font-size: 0;
+  padding: 2px 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.cssprefix-mart-skin-swatches.custom {
+  font-size: 0;
+  border: none;
+  background-color: #fff;
+}
+
+.cssprefix-mart-skin-swatches.opened .cssprefix-mart-skin-swatch {
+  width: 16px;
+  padding: 0 2px;
+}
+
+.cssprefix-mart-skin-swatches.opened .cssprefix-mart-skin-swatch.selected:after {
+  opacity: .75;
+}
+
+.cssprefix-mart-skin-swatch {
+  display: inline-block;
+  width: 0;
+  vertical-align: middle;
+  transition-property: width, padding;
+  transition-duration: .125s;
+  transition-timing-function: ease-out;
+}
+
+.cssprefix-mart-skin-swatch:nth-child(1) {
+  transition-delay: 0s
+}
+
+.cssprefix-mart-skin-swatch:nth-child(2) {
+  transition-delay: .03s
+}
+
+.cssprefix-mart-skin-swatch:nth-child(3) {
+  transition-delay: .06s
+}
+
+.cssprefix-mart-skin-swatch:nth-child(4) {
+  transition-delay: .09s
+}
+
+.cssprefix-mart-skin-swatch:nth-child(5) {
+  transition-delay: .12s
+}
+
+.cssprefix-mart-skin-swatch:nth-child(6) {
+  transition-delay: .15s
+}
+
+.cssprefix-mart-skin-swatch.selected {
+  position: relative;
+  width: 16px;
+  padding: 0 2px;
+}
+
+.cssprefix-mart-skin-swatch.selected:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin: -2px 0 0 -2px;
+  background-color: #fff;
+  border-radius: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.cssprefix-mart-skin-swatch.custom {
+  display: inline-block;
+  width: 0;
+  height: 38px;
+  overflow: hidden;
+  vertical-align: middle;
+  transition-property: width, height;
+  transition-duration: .125s;
+  transition-timing-function: ease-out;
+  cursor: default;
+}
+
+.cssprefix-mart-skin-swatch.custom.selected {
+  position: relative;
+  width: 36px;
+  height: 38px;
+  padding: 0 2px 0 0;
+}
+
+.cssprefix-mart-skin-swatch.custom.selected:after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+
+.cssprefix-mart-skin-swatches.custom .cssprefix-mart-skin-swatch.custom:hover {
+  background-color: #f4f4f4;
+  border-radius: 10%;
+}
+
+.cssprefix-mart-skin-swatches.custom.opened .cssprefix-mart-skin-swatch.custom {
+  width: 36px;
+  height: 38px;
+  padding: 0 2px 0 0;
+}
+
+.cssprefix-mart-skin-swatches.custom.opened .cssprefix-mart-skin-swatch.custom.selected:after {
+  opacity: .75;
+}
+
+.cssprefix-mart-skin-text.opened {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  color: #888;
+  font-size: 11px;
+  padding: 5px 2px;
+  width: 95px;
+  height: 40px;
+  border-radius: 10%;
+  background-color: #fff;
+}
+
+.cssprefix-mart-skin {
+  display: inline-block;
+  width: 100%;
+  padding-top: 100%;
+  max-width: 12px;
+  border-radius: 100%;
+}
+
+.cssprefix-mart-skin-tone-1 {
+  background-color: #ffc93a
+}
+
+.cssprefix-mart-skin-tone-2 {
+  background-color: #fadcbc
+}
+
+.cssprefix-mart-skin-tone-3 {
+  background-color: #e0bb95
+}
+
+.cssprefix-mart-skin-tone-4 {
+  background-color: #bf8f68
+}
+
+.cssprefix-mart-skin-tone-5 {
+  background-color: #9b643d
+}
+
+.cssprefix-mart-skin-tone-6 {
+  background-color: #594539
+}
+
+/* For screenreaders only, via https://stackoverflow.com/a/19758620 */
+.cssprefix-mart-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/*
+* Dark mode styles
+*/
+
+.cssprefix-mart-dark {
+  color: #fff;
+  border-color: #555453;
+  background-color: #222;
+}
+
+.cssprefix-mart-dark .cssprefix-mart-bar {
+  border-color: #555453;
+}
+
+.cssprefix-mart-dark .cssprefix-mart-search input {
+  color: #fff;
+  border-color: #555453;
+  background-color: #2f2f2f;
+}
+
+.cssprefix-mart-dark .cssprefix-mart-search-icon svg {
+  fill: #fff;
+}
+
+.cssprefix-mart-dark .cssprefix-mart-category .cssprefix-mart-emoji:hover:before {
+  background-color: #444;
+}
+
+.cssprefix-mart-dark .cssprefix-mart-category-label span {
+  background-color: #222;
+  color: #fff;
+}
+
+.cssprefix-mart-dark .cssprefix-mart-skin-swatches {
+  border-color: #555453;
+  background-color: #222;
+}
+
+.cssprefix-mart-dark .cssprefix-mart-anchor:hover,
+.cssprefix-mart-dark .cssprefix-mart-anchor:focus,
+.cssprefix-mart-dark .cssprefix-mart-anchor-selected {
+  color: #bfbfbf;
+}

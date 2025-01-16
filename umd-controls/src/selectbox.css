@@ -1,0 +1,216 @@
+﻿/*************************
+selectbox.control.css
+***************************/
+
+.cssprefix-selectbox.horizontal {
+    display: inline-flex;
+    width: 100%;
+}
+
+
+.cssprefix-selectbox-item {
+    display: flex;
+    padding: 8px 0;
+}
+
+.cssprefix-selectbox.horizontal .cssprefix-selectbox-item {
+    margin-left: 16px;
+    min-width: 100px;
+}
+
+.cssprefix-selectbox.horizontal .cssprefix-selectbox-item:first-child {
+    margin-left: 0;
+}
+
+.cssprefix-selectbox.horizontal .cssprefix-selectbox-item:last-child {
+    flex: 1;
+}
+
+.cssprefix-selectbox-item .cssprefix-checkbox {
+    margin-right: 8px;
+    width: 100%;
+    display: inline-flex;
+}
+
+.cssprefix-selectbox-item .cssprefix-checkbox .caption {
+    width: 100%;
+}
+
+.cssprefix-selectbox-item label.cssprefix-radio .caption {
+    position: absolute;
+    left: 24px;
+    width: calc(100% - 32px);
+}
+
+.cssprefix-selectbox-item label.cssprefix-radio {
+    width: 100%;
+}
+
+.cssprefix-selectbox-item.fixed label.cssprefix-checkbox .checkmark {
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+}
+
+.cssprefix-selectbox-item.fixed label.cssprefix-checkbox input:checked~.checkmark {
+    background-color: #a0adb7;
+    border-color: #a0adb7;
+}
+
+/* checkbox */
+
+
+/* Customize the label (the container) */
+.cssprefix-selectbox  .cssprefix-checkbox {
+    display: block;
+    height: 16px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.cssprefix-selectbox  label.cssprefix-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.cssprefix-selectbox label.cssprefix-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    background-color: #fDfDfD;
+    border: 1px solid #c1c2c3;
+}
+
+.cssprefix-selectbox label.cssprefix-checkbox .checkmark.disable {
+    background-color: #f0f0f0;
+}
+
+/* On mouse-over, add a grey background color */
+.cssprefix-selectbox label.cssprefix-checkbox:hover input~.checkmark {
+    background-color: #fff;
+}
+
+.cssprefix-selectbox label.cssprefix-checkbox:hover input~.checkmark.disable {
+    background-color: #f0f0f0;
+}
+
+/* When the checkbox is checked, add a blue background */
+.cssprefix-selectbox label.cssprefix-checkbox input:checked~.checkmark {
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
+
+/* Show the checkmark when checked */
+.cssprefix-selectbox label.cssprefix-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.cssprefix-selectbox label.cssprefix-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.cssprefix-selectbox label.cssprefix-checkbox .caption {
+    position: absolute;
+    left: 24px;
+}
+
+/*************************
+radio.control.css
+***************************/
+
+.cssprefix-selectbox label.cssprefix-radio {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 22px;
+    font-size: 14px;
+    height: 17px;
+    line-height: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: none;
+    font-weight: normal;
+    color: #212121;
+    margin: 0;
+}
+
+.cssprefix-selectbox label.cssprefix-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.cssprefix-selectbox label.cssprefix-radio .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #8D9BA2;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cssprefix-selectbox label.cssprefix-radio .checkmark:after {
+    display: none;
+    content: "";
+    position: absolute;
+}
+
+.cssprefix-selectbox label.cssprefix-radio .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #2196F3;
+}
+
+.cssprefix-selectbox label.cssprefix-radio input:checked~.checkmark {
+    background-color: white;
+    border: 1px solid #2196F3;
+}
+
+.cssprefix-selectbox label.cssprefix-radio input:checked~.checkmark:after {
+    display: block;
+}
+
+.cssprefix-selectbox label.cssprefix-radio .caption {
+    position: absolute;
+    left: 24px;
+}

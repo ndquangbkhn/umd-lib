@@ -1,0 +1,70 @@
+.cssprefix-ctr-notice-popup * {
+    box-sizing: border-box;
+    font-size: var(--cssprefix-font-size);
+}
+.cssprefix-ctr-notice-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 8000000;
+}
+
+.cssprefix-ctr-notice-popup .cssprefix-ctr-notice-popup__content {
+    width: 420px;
+    height: auto;
+    min-height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .16);
+}
+
+.cssprefix-ctr-notice-popup .cssprefix-ctr-notice-popup__logo {
+    width: 100%;
+    height: 64px;
+    margin-bottom: 16px;
+}
+
+
+.cssprefix-ctr-notice-popup .cssprefix-ctr-notice-popup__logo-img {
+    width: 100%;
+    height: 64px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cssprefix-ctr-notice-popup .cssprefix-ctr-notice-popup__message {
+    font-weight: 400;
+    text-align: center;
+    line-height: 27px;
+    margin-top: 8px;
+    word-wrap: break-word;
+    color: var(--cssprefix-text-color);
+}
+
+.cssprefix-ctr-notice-popup .cssprefix-ctr-notice-popup__close {
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/icon-close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}

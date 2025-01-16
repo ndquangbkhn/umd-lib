@@ -1,0 +1,81 @@
+<misavcard
+    style='z-index:300000; color:#212121;box-sizing: border-box;font-size: 14px; display: block; width: 100%; height: 100%; position: fixed; top: 0; left: 0; display: none; background-color: rgba(0,0,0,.16)'>
+    <style>
+        [qrbtn] {
+            padding: 8px 12px;
+            background: #f0f0f0;
+            cursor: pointer;
+            border-radius: 100px;
+        }
+
+        [qrbtn]:hover {
+            color: #fff;
+            background-color: #2196f3;
+        }
+
+        [copynotice] {
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 240px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
+            opacity: 0;
+            line-height: 40px;
+            margin: 0;
+            box-sizing: border-box;
+            background: rgba(0, 0, 0, .75);
+            z-index: 99;
+            color: #fff;
+            font-size: 16px;
+            transition: all .5s;
+        }
+    </style>
+    <div
+        style="max-width: 732px; width: 100%;
+                position: absolute; top: 100px; left: 50%; transform: translateX(-50%); border-radius: 8px; padding: 24px; box-sizing: border-box; display: inline-flex; background-color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.3)">
+        <i action="close" title="close"
+            style="display:block; position:absolute; right:16px; top:16px; width:24px; height:24px; cursor:pointer; display:block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <rect width="24" height="24" fill="none" />
+                <g transform="translate(6 6)">
+                    <path d="M882,300l6.117,6L882,312" transform="translate(-882 -300)" fill="none" stroke="#6a6a6a"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                    <path d="M902.156,300l-5.883,6,5.883,6" transform="translate(-890.155 -300)" fill="none"
+                        stroke="#6a6a6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                </g>
+            </svg>
+        </i>
+        <div
+            style="min-width:200px; flex:1;flex-direction: column;display: flex; height:330px; box-sizing: border-box;text-align:center">
+            <p style="margin: 24px 0;width: 100%;height: 120px;display:block;">
+                <img obj="avatarEl" style="width: 120px;height: 120px;border: 2px solid #e0e0e0;object-fit: cover;
+                            border-radius: 100px;" src="" />
+            </p>
+            <p obj="fullNameEl" style="font-size: 24px;margin:0 0 16px 0; font-weight: bold;"></p>
+            <p style="margin:0; flex:1" class="misavcard-des" res-key="Description"></p>
+            <p style="margin: 0; height: 32px; line-height: 32px;">
+                <span qrbtn action="copy" class="misavcard-btn-copy" res-key="CopyClipboard" style="display: none;">Sao chép link</span>
+                <span qrbtn action="svg" class="misavcard-btn-svg" res-key="DownloadSVG"></span>
+                <span qrbtn action="png" class="misavcard-btn-png" res-key="DownloadPNG"></span>
+            </p>
+        </div>
+        <div style="box-sizing: border-box; padding:24px">
+            <div
+                style="position: relative; padding: 24px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,.08); border-radius: 8px; background-color: #f0f0f0; box-sizing: border-box;">
+                <div obj="qrCodeEl" style="padding: 4px;border-radius: 8px;align-items: center;
+                                            display: flex;
+                                            justify-content: center;
+                                            box-shadow: 0 2px 3px rgba(0,0,0,.08);
+                                            background-color: #fff;
+                                            box-sizing: border-box;">
+
+                </div>
+                <p
+                    style=" margin: 0; text-align: center; color: #666; display: block; text-transform: uppercase; font-size: 11px; position: absolute; left: 50%; bottom: 4px; transform: translateX(-50%);">
+                    Scan me!</p>
+            </div>
+        </div>
+    </div>
+</misavcard>

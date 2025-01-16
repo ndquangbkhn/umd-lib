@@ -1,0 +1,86 @@
+﻿/* Customize the label (the container) */
+.cssprefix-checkbox {
+    display: block;
+    height: 16px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+label.cssprefix-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+label.cssprefix-checkbox .cssprefix-checkmark {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    background-color: #fDfDfD;
+    border: 1px solid #c1c2c3;
+}
+
+label.cssprefix-checkbox .cssprefix-checkmark.disable {
+    background-color: #f0f0f0;
+}
+
+/* On mouse-over, add a grey background color */
+label.cssprefix-checkbox:hover input~.cssprefix-checkmark {
+    background-color: #fff;
+}
+
+label.cssprefix-checkbox:hover input~.cssprefix-checkmark.disable {
+    background-color: #f0f0f0;
+}
+
+/* When the checkbox is checked, add a blue background */
+label.cssprefix-checkbox input:checked~.cssprefix-checkmark {
+    background-color: #0067FD;
+    border-color: #0067FD;
+}
+
+/* Show the checkmark when checked */
+label.cssprefix-checkbox input:checked~.cssprefix-checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+label.cssprefix-checkbox .cssprefix-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+label.cssprefix-checkbox .cssprefix-caption {
+    position: absolute;
+    left: 24px;
+}
