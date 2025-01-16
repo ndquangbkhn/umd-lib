@@ -3,9 +3,7 @@
   "workspaces": [
     "umd-core",
     "umd-controls",
-    "umd-ui/umd-emoji",
-    "umd-ui/umd-notificationbox",
-    "umd-ui/umd-qrcreator",
-    "umd-ui/umd-surveybox"
+    "umd-ui/emoji",
+    "umd-ui/qrcode"
   ]
 }
